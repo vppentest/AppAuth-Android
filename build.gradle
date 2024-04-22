@@ -15,7 +15,7 @@ buildscript {
 }
 
 plugins {
-  id "org.sonarqube" version "4.4.1.3373"
+    id "org.sonarqube" version "4.4.1.3373"
 }
 
 subprojects {
@@ -71,9 +71,9 @@ task showVersion {
 }
 
 sonar {
-  properties {
-    property "sonar.projectKey", "vppentest_AppAuth-Android"
-    property "sonar.organization", "vppentest"
-    property "sonar.host.url", "https://sonarcloud.io"
-  }
+    properties {
+        property "sonar.projectKey", "vppentest_AppAuth-Android"
+        property "sonar.organization", "vppentest"
+        property "sonar.host.url", "https://sonarcloud.io"
+    }
 }
