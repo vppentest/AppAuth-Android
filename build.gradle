@@ -2,6 +2,10 @@ import org.ajoberstar.grgit.Grgit
 
 apply from: 'config/keystore.gradle'
 
+plugins {
+  id "org.sonarqube" version "4.4.1.3373"
+}
+
 buildscript {
     repositories {
         gradlePluginPortal()
@@ -64,10 +68,6 @@ task showVersion {
         logger.lifecycle("Version Name: " + project.versionName)
         logger.lifecycle("Version Date: " + project.versionDate)
     }
-}
-
-plugins {
-  id "org.sonarqube" version "4.4.1.3373"
 }
 
 sonar {
