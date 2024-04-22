@@ -65,3 +65,15 @@ task showVersion {
         logger.lifecycle("Version Date: " + project.versionDate)
     }
 }
+
+plugins {
+  id "org.sonarqube" version "4.4.1.3373"
+}
+
+sonar {
+  properties {
+    property "sonar.projectKey", "vppentest_AppAuth-Android"
+    property "sonar.organization", "vppentest"
+    property "sonar.host.url", "https://sonarcloud.io"
+  }
+}
